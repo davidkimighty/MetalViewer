@@ -12,4 +12,8 @@
 #include <AppKit/AppKit.hpp>
 #include <MetalKit/MetalKit.hpp>
 
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
 #endif /* config_h */

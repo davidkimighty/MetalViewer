@@ -14,6 +14,7 @@
 		E69A5ED92B6FA99100EF7A9D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A5ED82B6FA99100EF7A9D /* Metal.framework */; };
 		E69A5EE12B6FB32A00EF7A9D /* view_delegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E69A5EDF2B6FB32A00EF7A9D /* view_delegate.cpp */; };
 		E69A5EE72B6FB38500EF7A9D /* renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E69A5EE52B6FB38500EF7A9D /* renderer.cpp */; };
+		E6BE6DE42B89B3B800AA0D6A /* triangle.metal in Sources */ = {isa = PBXBuildFile; fileRef = E6BE6DE32B89B3B800AA0D6A /* triangle.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		E69A5EE52B6FB38500EF7A9D /* renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = renderer.cpp; sourceTree = "<group>"; };
 		E69A5EE62B6FB38500EF7A9D /* renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = renderer.hpp; sourceTree = "<group>"; };
 		E69A5EE82B6FB3BF00EF7A9D /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		E6BE6DE32B89B3B800AA0D6A /* triangle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = triangle.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,8 @@
 		E69A5ECB2B6FA6AD00EF7A9D /* MetalViewer */ = {
 			isa = PBXGroup;
 			children = (
-				E69A5EDB2B6FB28300EF7A9D /* view */,
-				E69A5EDA2B6FB27300EF7A9D /* control */,
-				E69A5ECC2B6FA6AD00EF7A9D /* main.cpp */,
-				E69A5EE82B6FB3BF00EF7A9D /* config.h */,
+				E6BE6DE52B89BEE300AA0D6A /* src */,
+				E6BE6DE22B89B39F00AA0D6A /* shaders */,
 			);
 			path = MetalViewer;
 			sourceTree = "<group>";
@@ -117,6 +117,25 @@
 				E69A5EE62B6FB38500EF7A9D /* renderer.hpp */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		E6BE6DE22B89B39F00AA0D6A /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE6DE32B89B3B800AA0D6A /* triangle.metal */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		E6BE6DE52B89BEE300AA0D6A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E69A5EDB2B6FB28300EF7A9D /* view */,
+				E69A5EDA2B6FB27300EF7A9D /* control */,
+				E69A5ECC2B6FA6AD00EF7A9D /* main.cpp */,
+				E69A5EE82B6FB3BF00EF7A9D /* config.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +197,7 @@
 			files = (
 				E630025E2B80A41900F522FF /* app_delegate.cpp in Sources */,
 				E69A5EE12B6FB32A00EF7A9D /* view_delegate.cpp in Sources */,
+				E6BE6DE42B89B3B800AA0D6A /* triangle.metal in Sources */,
 				E69A5EE72B6FB38500EF7A9D /* renderer.cpp in Sources */,
 				E69A5ECD2B6FA6AD00EF7A9D /* main.cpp in Sources */,
 			);

@@ -17,8 +17,10 @@ class Renderer {
         void draw(MTK::View* view);
 
     private:
+        void buildShaders();
         MTL::Device* device;
         MTL::CommandQueue* commandQueue;
+        MTL::RenderPipelineState* trianglePipeline;
 };
 
 #endif /* renderer_hpp */
